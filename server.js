@@ -8,13 +8,13 @@ const signIn = require ('./Controllers/Signin')
 const dataBase = knex({
     client: 'pg',
     connection: {
-        connectionString: process.env.DATABASE_URL,
+        connectionString: process.env.DATABASE_URL1,
         ssl : {rejectUnauthorized: false},
         port: 5432,
-        host: process.env.DATABASE_HOST,
-        user: process.env.DATABASE_USER,
-        password: process.env.DATABASE_PW,
-        database: process.env.DATABASE_DB
+        host: process.env.DATABASE_HOST1,
+        user: process.env.DATABASE_USER1,
+        password: process.env.DATABASE_PW1,
+        database: process.env.DATABASE_DB1
     }
 
 });
